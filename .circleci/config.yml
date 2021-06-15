@@ -8,9 +8,9 @@ jobs:
       - run: sudo mkdir /src/node_modules
       - run: npm i
       - save_cache:
-        key: "npm-packages"
-        paths:
-          - /src/node_modules
+          key: "npm-packages"
+          paths:
+            - /src/node_modules
       - run: npm run lint
   test:
     docker:
