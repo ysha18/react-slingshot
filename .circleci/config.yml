@@ -6,6 +6,7 @@ jobs:
     steps:
       - checkout
       - run: sudo mkdir node_modules/
+      - run: sudo chmod 777 node_modules
       - run: npm i
       - save_cache:
           key: "npm-packages"
